@@ -9,3 +9,6 @@ df.loc[:,'JTBC']
 # 왜 df['JTBC']는 되는데 .loc을 붙이면 안되는지
 
 df.loc[:, ('SBS', 'JTBC')]
+
+# 여기에 코드를 작성하세요
+df.loc[2012:2017, 'KBS':'SBS']
