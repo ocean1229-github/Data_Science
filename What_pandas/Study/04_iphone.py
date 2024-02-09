@@ -36,3 +36,15 @@ condition = (iphone_df['디스플레이'] > 5) & (iphone_df['Face ID'] == 'Yes']
 # | 이것도 가능
 
 iphone_df(condition)
+
+#-------------------------------------
+#iloc
+#loc -> location 
+#iloc -> index location
+
+iphone_df.iloc[2, 4]
+# 'No'
+
+iphone_df.iloc([1, 3], [1. 4])
+
+iphone_df.iloc[3:, 1:4]
