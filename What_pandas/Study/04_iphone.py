@@ -15,3 +15,24 @@ iphone_df.loc['iPhone X']
 type(iphone_df.loc['iPhone X'])
 
 iphone_df.loc[:, '출시일']
+
+#----------------------------------
+
+iphone_df.loc[[True, False, True, True, False, True, False]]
+
+iphone_df.loc[[True, False, False, True]]
+
+iphone_df.loc[:, [True, False, False, True]]
+
+iphone_df['디스플레이'] > 5
+
+iphone_df.loc[iphone_df['디스플레이'] > 5]
+
+iphone_df['Face ID'] == 'Yes'
+
+iphone_df.loc[iphone_df['Face ID'] == 'Yes']
+
+condition = (iphone_df['디스플레이'] > 5) & (iphone_df['Face ID'] == 'Yes'])
+# | 이것도 가능
+
+iphone_df(condition)
