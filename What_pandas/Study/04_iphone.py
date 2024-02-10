@@ -48,3 +48,18 @@ iphone_df.iloc[2, 4]
 iphone_df.iloc([1, 3], [1. 4])
 
 iphone_df.iloc[3:, 1:4]
+
+
+#--------------------------------------
+iphone_df.loc['iPhone 8', '메모리']
+iphone_df.loc['iPhone 8', '메모리'] = '2.5GB'
+iphone_df.loc['iPhone 8', '출시버전'] = 'iOS 10.3'
+
+iphone_df.loc['iPhone 8']
+
+iphone_df.loc['iPhone 8'] = ['2016-09-22', '4.7', '2GB', 'iOS 11.0', 'No']
+
+iphone_df['디스플레이']
+iphone_df['디스플레이'] = ['4,7 in', '5,5 in', '4,7 in', '5,5 in', '5,8 in', '5,8 in', '6,5 in']
+
+iphone_df['Face ID'] = 'No'
