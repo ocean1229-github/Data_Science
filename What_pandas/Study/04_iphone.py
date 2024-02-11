@@ -63,3 +63,27 @@ iphone_df['디스플레이']
 iphone_df['디스플레이'] = ['4,7 in', '5,5 in', '4,7 in', '5,5 in', '5,8 in', '5,8 in', '6,5 in']
 
 iphone_df['Face ID'] = 'No'
+
+
+#---------------------------
+iphone_df[['디스플레이', 'Face ID']]
+
+iphone_df[['디스플레이', 'Face ID']] = 'x'
+iphone_df
+
+iphone_df.loc[['iPhone 7', 'iPhone X']]
+
+iphone_df.loc[['iPhone 7', 'iPhone X']] = 'o'
+
+iphone_df.loc['iPhone 7':'iPhone X']
+
+#초기화
+iphone_df['디스플레이'] > 5
+
+iphone_df.loc[iphone_df['디스플레이'] > 5]
+
+iphone_df.loc[iphone_df['디스플레이'] > 5] = 'p'
+
+iphone_df.iloc[[1, 3], [1, 4]]
+
+iphone_df.iloc[[1, 3], [1, 4]] = 'v'
