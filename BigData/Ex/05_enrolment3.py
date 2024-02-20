@@ -5,7 +5,8 @@ df = pd.read_csv('data/enrolment_3.csv')
 # 여기에 코드를 작성하세요
 
 # 조건 1
-
+sorted(df['room assignment'])
+auditorium_count = len(list(df['room assignment'] == 'Auditorium'].index))
 
 # 조건 2
 not_assigned = df['status'] == 'not allowed'
